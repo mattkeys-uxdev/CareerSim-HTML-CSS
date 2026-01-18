@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* ===============================================
+First test code to create top nav with
+name in left corner and menu items in the right
+=============================================== */
+/* .header-top { */
+/* display: flex; */
+/* justify-content: space-around; */
+/* justify-content: space-between; */
+/* align-items: center;
+  padding: 2px; */
+/* background-color: lightgrey;
+  color: black;
+  height: 2rem; */
+/* } */
+
+/* .header-top ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  list-style: none;
+  gap: 1rem;
+} */
+
+/* ====================================================
+New CSS for new design layout 
+=======================================================*/
+
+/*===================================
+ TOP NAV BAR SECTION 
+ ==================================*/
+
+.about-topnav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ==================================
+HAMBURGER MENU TOP LEFT
+================================== */
+
+.hamburger {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 6px 0;
+}
+
+.hamburger-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+/* Rotate first bar */
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+}
+
+/* =================================
+DARK MODE TOGGLE MENU TOP LEFT
+================================= */
+
+/* ================================
+SOCIAL LINKS
+================================ */
+
+/* ================================
+HIRE ME BUTTON
+================================ */
