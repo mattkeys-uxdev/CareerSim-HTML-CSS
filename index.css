@@ -220,17 +220,17 @@ main {
 BORDER BOX
 ============================ */
 .about {
-  border: 1px solid #ddd; /* Small, light grey border */
-  background-color: #f4f1ec; /* Slight color change inside */
-  padding: 20px; /* Space between text and border */
-  border-radius: 8px; /* Slightly rounded corners for a modern feel */
-  max-width: 800px; /* Keeps the box from getting too wide on desktop */
-  margin: 20px auto; /* Centers the box and adds space outside */
-  line-height: 1.6; /* Improves readability */
+  border: 1px solid #ddd;
+  background-color: #f4f1ec;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 800px;
+  margin: 20px auto;
+  line-height: 1.6;
 }
 
 .about h2 {
-  margin-top: 0; /* Removes extra space at the top of the header */
+  margin-top: 0;
 }
 
 .about-me h2 {
