@@ -7,38 +7,75 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <!-- TOP NAV SECTION - Hamburger, dark-mode, socials , contact -->
+  <!-- TOP NAV SECTION - Hamburger, dark-mode, socials , contact -->
     <div class="about-topnav">
       <nav>
-        <div class="hamburger-container" onclick="hamburgeranimation">
-          <div class="hamburger" class="bar1"></div>
-          <div class="hamburger" class="bar2"></div>
-          <div class="hamburger" class="bar3"></div>
+        <div class="nav-left">
+          <div class="hamburger-container" onclick="hamburgeranimation">
+            <div class="hamburger" class="bar1"></div>
+            <div class="hamburger" class="bar2"></div>
+            <div class="hamburger" class="bar3"></div>
+          </div>
+          <div><button class="dark-toggle">Dark Mode toggle</button></div>
         </div>
-        <div><button class="dark-toggle">Dark Mode toggle</button></div>
-        <div>
+        <div class="nav-center">
           <ul class="socials">
             <li><a href="#">Linkln</a></li>
             <li><a href="#">Insta</a></li>
             <li><a href="#">GitHub</a></li>
           </ul>
         </div>
-        <div>
+        <div class="nav-right">
           <button class="contact">hireme</button>
         </div>
       </nav>
     </div>
     <!-- Side menu bar - connected to hamburger button -->
-    <div>
+    <div class="page-layout">
       <nav class="side-nav">
         <ul>
-          <li class="nav-side"><a href="#">About</a></li>
-          <li class="nav-side"><a href="#"> Projects</a></li>
-          <li class="nav-side"><a href="#">Resume</a></li>
-          <li class="nav-side"><a href="#">HireME</a></li>
-          <li class="nav-side"><a href="#">Close</a></li>
+          <li class="nav-side">
+            <button><a href="./about.html">About</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="#">Projects</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="./resume.html">Resume</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="./hireme.html">HireME</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="#">X</a></button>
+          </li>
         </ul>
       </nav>
-    </div>
+
+    <main>
+      <main>
+        <img
+          class="profile-picture"
+          src="./assests/IMG-20250209-WA0013.jpg"
+          alt="Image of me in Cape Town"
+          width="300px"
+        />
+        <div class="about-me">
+          <h2>My Projects</h2>
+          <p>
+            A collection of my work ranging from academic assignments to independent simulations. These projects represent my journey of turning classroom theory into practical, real-world applications as I continue to level up my skills.
+</p>
+          <button>Start talking -></button>
+        </div>
+
+        <!-- Add featured projects here -->
+
+        <!-- ================================== -->
+
+        <!-- Add skills and experiences here -->
+
+        <!-- ================================== -->
+      </main>
+    </main>
   </body>
 </html>

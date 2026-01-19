@@ -1,6 +1,16 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "" Segoe UI ", Roboto, Helvetica, Arial, sans-serif;";
+}
+
+body {
+  background-color: #f4f1ec;
+  color: #111144;
 }
 
 /* ===============================================
@@ -34,13 +44,47 @@ New CSS for new design layout
  TOP NAV BAR SECTION 
  ==================================*/
 
-.about-topnav {
+.about-topnav nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  height: 60px;
+}
+
+/* Force left and right sections to take up equal space to keep center centered */
+.nav-left,
+.nav-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-left {
+  gap: 15px; /* Space between hamburger and dark mode toggle */
+}
+
+.nav-center {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-right {
+  justify-content: flex-end; /* Pushed the button to the far right */
+}
+
+/* Keep social links in a row */
+.socials {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
 }
 
 /* ==================================
-HAMBURGER MENU TOP LEFT
+HAMBURGER MENU TOP LEFT "W3 Schools"
 ================================== */
 
 .hamburger {
@@ -80,6 +124,12 @@ HAMBURGER MENU TOP LEFT
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.nav-side button:hover {
+  background-color: #f98513;
+  border-color: #f98513;
+  transform: translateX(5px);
+}
+
 /* =================================
 DARK MODE TOGGLE MENU TOP LEFT
 ================================= */
@@ -91,3 +141,69 @@ SOCIAL LINKS
 /* ================================
 HIRE ME BUTTON
 ================================ */
+
+/* ================================
+SIDE BAR + MAIN CONENT SECTION LAYOUT
+================================ */
+.page-layout {
+  display: flex;
+  min-height: 100%;
+  margin-top: 16px;
+}
+
+/* ================================
+SIDE BAR
+================================ */
+.side-nav {
+  flex: 0 0 280px;
+  background-color: #f4f1ec;
+  padding: 20px 30px;
+  position: sticky;
+  top: 60px;
+}
+
+.nav-side {
+  list-style: none;
+  padding: 10px;
+}
+/* ================================
+MAIN CONENT SECTION
+================================ */
+
+main {
+  flex: 1;
+  background-color: #f4f1ec;
+  padding: 80px 10% 80px 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.profile-picture {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #f4f1ec;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  margin-bottom: 25px;
+}
+
+.about-me {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-me h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.about-me p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}

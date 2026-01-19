@@ -7,38 +7,53 @@
     <link rel="stylesheet" href="./index.css" />
   </head>
   <body>
-    <!-- TOP NAV SECTION - Hamburger, dark-mode, socials , contact -->
+   <!-- TOP NAV SECTION - Hamburger, dark-mode, socials , contact -->
     <div class="about-topnav">
       <nav>
-        <div class="hamburger-container" onclick="hamburgeranimation">
-          <div class="hamburger" class="bar1"></div>
-          <div class="hamburger" class="bar2"></div>
-          <div class="hamburger" class="bar3"></div>
+        <div class="nav-left">
+          <div class="hamburger-container" onclick="hamburgeranimation">
+            <div class="hamburger" class="bar1"></div>
+            <div class="hamburger" class="bar2"></div>
+            <div class="hamburger" class="bar3"></div>
+          </div>
+          <div><button class="dark-toggle">Dark Mode toggle</button></div>
         </div>
-        <div><button class="dark-toggle">Dark Mode toggle</button></div>
-        <div>
+        <div class="nav-center">
           <ul class="socials">
             <li><a href="#">Linkln</a></li>
             <li><a href="#">Insta</a></li>
             <li><a href="#">GitHub</a></li>
           </ul>
         </div>
-        <div>
+        <div class="nav-right">
           <button class="contact">hireme</button>
         </div>
       </nav>
     </div>
     <!-- Side menu bar - connected to hamburger button -->
-    <div>
+    <div class="page-layout">
       <nav class="side-nav">
         <ul>
-          <li class="nav-side"><a href="#">About</a></li>
-          <li class="nav-side"><a href="#"> Projects</a></li>
-          <li class="nav-side"><a href="#">Resume</a></li>
-          <li class="nav-side"><a href="#">HireME</a></li>
-          <li class="nav-side"><a href="#">Close</a></li>
+          <li class="nav-side">
+            <button><a href="./about.html">About</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="./projects.html">Projects</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="#">Resume</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="./hireme.html">HireME</a></button>
+          </li>
+          <li class="nav-side">
+            <button><a href="#">X</a></button>
+          </li>
         </ul>
       </nav>
-    </div>
+
+    <main>
+      <h2>Resume</h2>
+    </main>
   </body>
 </html>
