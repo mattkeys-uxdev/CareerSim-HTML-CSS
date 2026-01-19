@@ -53,7 +53,6 @@ New CSS for new design layout
   height: 60px;
 }
 
-/* Force left and right sections to take up equal space to keep center centered */
 .nav-left,
 .nav-right {
   flex: 1;
@@ -62,7 +61,7 @@ New CSS for new design layout
 }
 
 .nav-left {
-  gap: 15px; /* Space between hamburger and dark mode toggle */
+  gap: 15px;
 }
 
 .nav-center {
@@ -72,10 +71,9 @@ New CSS for new design layout
 }
 
 .nav-right {
-  justify-content: flex-end; /* Pushed the button to the far right */
+  justify-content: flex-end;
 }
 
-/* Keep social links in a row */
 .socials {
   display: flex;
   list-style: none;
