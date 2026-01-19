@@ -11,6 +11,7 @@
 body {
   background-color: #f4f1ec;
   color: #111144;
+  font-size: 1.2rem;
 }
 
 /* ===============================================
@@ -153,9 +154,9 @@ SIDE BAR + MAIN CONENT SECTION LAYOUT
 SIDE BAR
 ================================ */
 .side-nav {
-  flex: 0 0 280px;
+  display: flex;
   background-color: #f4f1ec;
-  padding: 20px 30px;
+  padding: 12px 20px;
   position: sticky;
   top: 60px;
 }
@@ -173,11 +174,24 @@ SIDE BAR
 /* ================================
 MAIN CONENT SECTION
 ================================ */
+/* main {
+  position: absolute;
+  top: 55%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+} */
+
+/* main {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
 
 main {
   flex: 1;
   background-color: #f4f1ec;
-  padding: 80px 10% 80px 10%;
+  padding: 0% 16% 80px 10%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -192,6 +206,7 @@ main {
   object-fit: cover;
   border: 5px solid #f4f1ec;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  position: relative;
   margin-bottom: 25px;
 }
 
@@ -201,6 +216,22 @@ main {
   flex-direction: column;
   align-items: center;
 }
+/*===========================
+BORDER BOX
+============================ */
+.about {
+  border: 1px solid #ddd; /* Small, light grey border */
+  background-color: #f4f1ec; /* Slight color change inside */
+  padding: 20px; /* Space between text and border */
+  border-radius: 8px; /* Slightly rounded corners for a modern feel */
+  max-width: 800px; /* Keeps the box from getting too wide on desktop */
+  margin: 20px auto; /* Centers the box and adds space outside */
+  line-height: 1.6; /* Improves readability */
+}
+
+.about h2 {
+  margin-top: 0; /* Removes extra space at the top of the header */
+}
 
 .about-me h2 {
   font-size: 2.5rem;
@@ -208,11 +239,32 @@ main {
 }
 
 .about-me p {
-  line-height: 1.5;
+  line-height: 1.6;
   font-size: 1.2rem;
 }
 
 .view-resume:hover {
   background-color: #f98513;
   border-color: #f98513;
+}
+
+/* ====================================
+PROJECT PAGE
+======================================= */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+  padding: 5px;
+}
+
+.project-card {
+  width: 250px;
+}
+
+.project-card img {
+  max-width: 100%;
+}
+.product-card p {
+  color: black;
 }
