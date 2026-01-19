@@ -124,12 +124,6 @@ HAMBURGER MENU TOP LEFT "W3 Schools"
   transform: translate(0, -11px) rotate(45deg);
 }
 
-.nav-side button:hover {
-  background-color: #f98513;
-  border-color: #f98513;
-  transform: translateX(5px);
-}
-
 /* =================================
 DARK MODE TOGGLE MENU TOP LEFT
 ================================= */
@@ -141,6 +135,10 @@ SOCIAL LINKS
 /* ================================
 HIRE ME BUTTON
 ================================ */
+.contact:hover {
+  background-color: #f98513;
+  border-color: #f98513;
+}
 
 /* ================================
 SIDE BAR + MAIN CONENT SECTION LAYOUT
@@ -165,6 +163,12 @@ SIDE BAR
 .nav-side {
   list-style: none;
   padding: 10px;
+}
+
+.nav-side button:hover {
+  background-color: #f98513;
+  border-color: #f98513;
+  transform: translateX(5px);
 }
 /* ================================
 MAIN CONENT SECTION
@@ -206,4 +210,9 @@ main {
 .about-me p {
   line-height: 1.5;
   font-size: 1.2rem;
+}
+
+.view-resume:hover {
+  background-color: #f98513;
+  border-color: #f98513;
 }
